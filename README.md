@@ -1,4 +1,4 @@
-# azure-automation-runbooks
+# Demo Automation Runbooks
 
 These Runbooks expect that you've created a Service Principal and have added the following items to shared resources:
 
