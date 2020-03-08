@@ -38,7 +38,7 @@ New-Sp -Name <SP NAME> -Password <PASSWORD>
 
 After you create a webhook for the StopVM Runbook you can use the following PowerShell snippet to invoke your Runbook via the webhook.
 
-This example would shutdown two VMs name web1 and web2 in the "webservers" resource group:
+This example would shutdown two VMs named web1 and web2 in the "webservers" resource group:
 
 ```
 
