@@ -28,3 +28,23 @@ Add the function to your shell session (paste it in or dot source it from a scri
 ```
 New-Sp -Name <SP NAME> -Password <PASSWORD>
 ```
+
+# Working with the StopVM Runbook
+
+After you create a webhook for the StopVM Runbook you can use the following PowerShell snippet to invoke your Runbook via the webhook. This example would shutdown two VMs name web1 and web2 in the "webservers" resource group:
+
+```
+
+$uri = "https://s4events.azure-automation.net/webhooks?token=<YOUR TOKEN>"
+
+$vms  = @(
+            @{ Name="web1";ResourceGroup="webservers"},
+            @{ Name="web2";ResourceGroup="webservers"}
+        )
+
+$body = ConvertTo-Json -InputObject $vms
+$header = @{ message="Started by CloudSkills.io"}
+
+Invoke-WebRequest -Method Post -Uri $uri -Body $body -Headers $header
+
+```
