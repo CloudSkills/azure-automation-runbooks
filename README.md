@@ -7,4 +7,4 @@ These Runbooks expect that you've created a Service Principal and have added the
 
 Here's a PowerShell function you can use to quickly create a service principal
 
-<script src="https://gist.github.com/mikepfeiffer/b2cc488985e675de7e8c8d38a0943539.js"></script>
+{% b2cc488985e675de7e8c8d38a0943539 %}
