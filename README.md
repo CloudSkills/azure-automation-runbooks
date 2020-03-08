@@ -2,8 +2,8 @@
 
 These Runbooks show two examples of how to automate routine tasks with Azure Automation.
 
-* **DataDiskSnapshot** - a runbook designed to run on a schedule that takes a snapshot of VM data disks for all Windows Servers in a specific resource group
-* **StopVM** - a runbook designed to be invoked via webhook to shutdown VMs identified in the request body
+* **DataDiskSnapshot** runbook designed to run on a schedule that takes a snapshot of VM data disks for all Windows Servers in a specific resource group
+* **StopVM** - runbook designed to be invoked via webhook to shutdown VMs identified in the request body
 
 These Runbooks expect that you've created a Service Principal and have added the following items to shared resources:
 
