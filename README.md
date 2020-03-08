@@ -26,5 +26,5 @@ function New-Sp {
 Add the function to your shell session (paste it in or dot source it from a script) and then:
 
 ```
-New-Sp -Name YOUR_SP_NAME -Password *****
+New-Sp -Name <SP NAME> -Password <PASSWORD>
 ```
