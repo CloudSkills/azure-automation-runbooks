@@ -23,3 +23,8 @@ function New-Sp {
   Write-Output $sp
 }
 ```
+Add the function to your shell session (paste it in or dot source it from a script) and then:
+
+```
+New-Sp -Name YOUR_SP_NAME -Password *****
+```
