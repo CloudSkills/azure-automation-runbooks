@@ -1,6 +1,6 @@
 #Get service principal details from shared resources
-$cred = Get-AutomationPSCredential -Name 'SPCreds'
-$tenantId = Get-AutomationVariable -Name 'TenantId'
+$cred = Get-AzAutomationCredential -ResourceGroupName "Automation" -AutomationAccountName "Automation" -Name "SPCreds"
+$tenantId = Get-AzAutomationVariable -ResourceGroupName "Automation" -AutomationAccountName "Automation" -Name "TenantId"
 
 #Auth with service principal
 Connect-AzAccount -ServicePrincipal -Credential $cred -Tenant $tenantId
